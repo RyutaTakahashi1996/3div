@@ -1,0 +1,70 @@
+body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  height: 450px;
+}
+
+/* 上の赤いエリア */
+.top {
+  height: 100px;
+  background: #ff0000;
+  position: relative;
+}
+
+.purple-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.purple-box {
+  width: 40px;
+  height: 40px;
+  background: #a9004b;
+}
+
+/* 中央のエリア */
+.middle {
+  display: flex;
+}
+
+/* 左の緑のボックス */
+.left {
+  width: 150px;
+  height: 250px;
+  background: #00ff51;
+}
+
+/* 右の茶色のボックス */
+.right {
+  flex: 1;
+  background: #8c2727;
+  height: 250px;
+  padding: 40px 0 0 40px;
+  box-sizing: border-box;
+}
+
+.orange-box {
+  width: 140px;
+  height: 40px;
+  background: #ff863f;
+  border: 5px solid #ffffff;
+  margin-bottom: 10px;
+}
+
+/* 下の黄色エリア */
+.bottom {
+  height: 100px;
+  background: #ffd000;
+}
