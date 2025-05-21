@@ -11,6 +11,13 @@ body {
   width: 400px;
 }
 
+/* clearfix クラス */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* 上の赤いエリア */
 .top {
   height: 100px;
@@ -54,20 +61,31 @@ body {
 
 /* 右の茶色のボックス */
 .right {
-  float:left;
+  float: left;
   background: #8c2727;
   height: 250px;
-  width:250px;
-  padding: 40px 0 0 40px;
-  box-sizing: border-box;
+  width: 250px;
+  position: relative;
 }
 
+/* オレンジボックスのラッパー */
+.orange-wrapper {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+/* オレンジボックス */
 .orange-box {
   width: 140px;
   height: 40px;
   background: #ff863f;
   border: 5px solid #ffffff;
   margin-bottom: 10px;
+}
+
+.orange-box:last-child {
+  margin-bottom: 0;
 }
 
 /* 下の黄色エリア */
