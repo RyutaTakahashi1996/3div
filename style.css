@@ -31,7 +31,7 @@ body {
   right: 20px;
   background: #ffffff;
   padding: 10px;
-  overflow: hidden;
+
 }
 
 .purple-box {
@@ -40,16 +40,13 @@ body {
   height: 40px;
   background: #a9004b;
   margin-right: 10px;
+  /*overflow削除 */
 }
 
 .purple-box:last-child {
   margin-right: 0;
 }
 
-/* 中央のエリア */
-.middle {
-  overflow: hidden;
-}
 
 /* 左の緑のボックス */
 .left {
